@@ -1,0 +1,92 @@
+@import "./reset";
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(241, 210, 71);
+}
+
+.head {
+  letter-spacing: 0.4rem;
+  font-family: "Permanent Marker", cursive;
+  font-size: 3rem;
+}
+.text-center {
+  text-align: center;
+}
+.bar {
+  text-align: center;
+  margin: 1rem;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  height: 450px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: $Teals-4;
+  color: $October-4-hex;
+}
+
+.legend-img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  transition: all 0.3s;
+  border-radius: inherit;
+  border: 1px solid red;
+  display: flex;
+}
+.legend-img:hover {
+  transform: scale(0.7);
+}
+
+.stats {
+  height: 22rem;
+  list-style-type: none;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin: auto;
+  font-family: "Nothing You Could Do", cursive;
+}
+
+.card-box {
+  background-image: url(../components/assets/bglogo.jpg);
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.legend h3 {
+  text-align: center;
+  padding-top: 1rem;
+  font-family: "Cabin Sketch", sans-serif;
+}
+
+.inbar {
+  background-color: blue;
+  border-radius: 1rem;
+  font-family: "Permanent Marker", cursive;
+}
+.inbar::placeholder {
+  color: red;
+  text-align: center;
+  padding: 1rem;
+}
